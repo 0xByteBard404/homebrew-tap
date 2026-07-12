@@ -11,7 +11,7 @@ class Readignore < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/0xByteBard404/readignore/releases/download/v0.3.3/readignore_0.3.3_darwin_amd64.tar.gz"
-      sha256 "26f208a317ce4be51dd490438c5ce604cf9e5ec45dc3b8388629b1076ca51a99"
+      sha256 "c32eb8fea1fa22ea32469681c2a5101d3750d7056db676ea37c5179f5c9a5b31"
 
       define_method(:install) do
         bin.install "readignore"
@@ -19,7 +19,7 @@ class Readignore < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/0xByteBard404/readignore/releases/download/v0.3.3/readignore_0.3.3_darwin_arm64.tar.gz"
-      sha256 "76e6ab6a999dca8b6d0712595551d24756f462e0b9765ca0da5ee973c275510c"
+      sha256 "a677b04d6df379b928f22257ce95a21ef74b17c4b76de784ee51d49ab94d4450"
 
       define_method(:install) do
         bin.install "readignore"
@@ -30,14 +30,14 @@ class Readignore < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/0xByteBard404/readignore/releases/download/v0.3.3/readignore_0.3.3_linux_amd64.tar.gz"
-      sha256 "0f3ea44247c46b3fece71df841e6b5e834de928791242bbdae6fca1d8f7033d9"
+      sha256 "3b0a35dc2434a47cf4272eb6b16a7458cd1034afc3965cac30fd005184eae26d"
       define_method(:install) do
         bin.install "readignore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/0xByteBard404/readignore/releases/download/v0.3.3/readignore_0.3.3_linux_arm64.tar.gz"
-      sha256 "fbd6a10810cc31d93e576b649588db045c2c244566b208b105119cb50a9baf48"
+      sha256 "b832155aa4a33dfdf89422952ec63eb67ad39dc9767ede20e2d2525032856dfc"
       define_method(:install) do
         bin.install "readignore"
       end
