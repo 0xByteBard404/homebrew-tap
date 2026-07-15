@@ -5,21 +5,21 @@
 class Readignore < Formula
   desc ".gitignore for AI coding agents — declare files your AI agent must not read."
   homepage "https://github.com/0xByteBard404/readignore"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/0xByteBard404/readignore/releases/download/v0.4.0/readignore_0.4.0_darwin_amd64.tar.gz"
-      sha256 "f3e6f49cb997ecd28ca9bf22d23ee2c7b727cb50eb6c2d5b3191743bd464c658"
+      url "https://github.com/0xByteBard404/readignore/releases/download/v0.5.0/readignore_0.5.0_darwin_amd64.tar.gz"
+      sha256 "94bafee7b11b5bd64aa0c36d2e1430c9d407466cfb9812d5b3446a3c5b68c653"
 
       define_method(:install) do
         bin.install "readignore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/0xByteBard404/readignore/releases/download/v0.4.0/readignore_0.4.0_darwin_arm64.tar.gz"
-      sha256 "6518d95506333c74afdfbb571a42074fb2dc9d61aabda52262dd570615fc0bbc"
+      url "https://github.com/0xByteBard404/readignore/releases/download/v0.5.0/readignore_0.5.0_darwin_arm64.tar.gz"
+      sha256 "e94b8d3ff825a3b964e6531219ea573d516d5ec5657b3f5b6368d8f7c0717fcd"
 
       define_method(:install) do
         bin.install "readignore"
@@ -29,15 +29,15 @@ class Readignore < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xByteBard404/readignore/releases/download/v0.4.0/readignore_0.4.0_linux_amd64.tar.gz"
-      sha256 "d2ce73744c9a9faa2cd4a15643909bcd63a3d01be256c5bfc9ab752283968c06"
+      url "https://github.com/0xByteBard404/readignore/releases/download/v0.5.0/readignore_0.5.0_linux_amd64.tar.gz"
+      sha256 "453aeb14563213712d32ef556add72b9c44db5aa427c65391d0ec9d3b78535cf"
       define_method(:install) do
         bin.install "readignore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xByteBard404/readignore/releases/download/v0.4.0/readignore_0.4.0_linux_arm64.tar.gz"
-      sha256 "0d1a8d36879b3839d562aac424b1f8a9a0a6740d061ef4e6b38d9f25c83f26eb"
+      url "https://github.com/0xByteBard404/readignore/releases/download/v0.5.0/readignore_0.5.0_linux_arm64.tar.gz"
+      sha256 "fbf4d5d7850ae245c5e58f2c5d72b90accca3a684270bfaad4759838d5aa9ca1"
       define_method(:install) do
         bin.install "readignore"
       end
